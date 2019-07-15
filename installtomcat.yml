@@ -1,6 +1,6 @@
 ---
 - hosts: dev 
-  remote_user: ansible
+  remote_user: ansible1
   become: yes
   roles:
      - tomcat
