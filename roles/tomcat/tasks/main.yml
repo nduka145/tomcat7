@@ -45,4 +45,4 @@
     command: systemctl daemon-reload
 
   - name: start Tomcat as a service
-    service: name=tomcat state=started enabled=yes
+    command: systemctl start tomcat.service
