@@ -1,0 +1,9 @@
+---
+- hosts: dev 
+  become: yes
+  tasks:
+    
+    - firewalld:
+        port: 8080/tcp
+        permanent: yes
+        state: enabled
