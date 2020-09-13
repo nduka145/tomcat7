@@ -3,6 +3,8 @@
   become: yes
   become_method: sudo
   tasks:
+    - name: create file
+      command: touch /opt/nduka-awx.txt
     
     - firewalld:
         port: 8082/tcp
