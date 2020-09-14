@@ -7,7 +7,7 @@
       command: touch /opt/danielmoney.txt
       
     - firewalld:
-        port: 8082/tcp
+        port: 8080/tcp
         permanent: yes
         state: enabled
         zone: public
