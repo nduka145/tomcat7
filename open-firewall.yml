@@ -3,7 +3,9 @@
   become: yes
   become_method: sudo
   tasks:
-  
+    - name: crete file
+      command: touch /opt/danielmoney.txt
+      
     - firewalld:
         port: 8082/tcp
         permanent: yes
